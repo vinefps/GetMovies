@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{{movie.title}}</title>
+</head>
+<body class="m-0 p-0 font-sans bg-[#141414] text-white">
+  <div class="relative w-full h-screen overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center brightness-70" style="background-image: url('https://image.tmdb.org/t/p/original{{movie.backdrop_path}}');"></div>
+    <div class="relative p-5 z-10">
+      <div class="text-2xl font-bold text-[#e50914] mb-5">FILME</div>
+      <h1 class="text-4xl font-bold mb-5">{{movie.title}}</h1>
+      <img class="w-full max-w-3xl h-auto mb-5 rounded-lg" src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" alt="{{movie.title}}">
+      <div class="flex gap-2 mb-5">
+        <button class="px-5 py-2 rounded font-bold bg-white text-black cursor-pointer">Assistir</button>
+        <button class="px-5 py-2 rounded font-bold bg-white bg-opacity-30 text-white cursor-pointer">+</button>
+        <button class="px-5 py-2 rounded font-bold bg-white bg-opacity-30 text-white cursor-pointer">👍</button>
+      </div>
+      <div class="text-sm mb-2">
+        <span>Novo {{movie.release_date.split('-')[0]}}</span> {{movie.runtime}}min <span>HD</span>
+      </div>
+      <div class="flex gap-2 mb-5">
+        <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-xs">14</span>
+        <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-xs">Top 1 em filmes hoje</span>
+      </div>
+      <p>{{movie.overview}}</p>
+      <div class="text-sm mb-2">
+        <strong>Elenco:</strong> <!-- Lista de elenco aqui -->
+      </div>
+      <div class="text-sm mb-2">
+        <strong>Gêneros:</strong> <!-- Lista de gêneros aqui -->
+      </div>
+      <div class="text-sm mb-2">
+        <strong>C
