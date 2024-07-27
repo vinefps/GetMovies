@@ -46,8 +46,7 @@ router.get('/movie/:id', async (req, res) => {
                 api_key: process.env.API_MOVIE_KEY
             }
         });
-        res.json(response.data)
-        console.log(process.env.API_MOVIE_KEY)
+        console.log(response.data)
         res.render('details', { movies: response.data });
     } catch (error) {
         console.error('Error fetching data from TMDb:', error);
