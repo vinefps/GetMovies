@@ -36,8 +36,6 @@ npm start
 
 o	index.mustache: Template para exibir a lista de filmes populares.
 
-o	results.mustache: Template para exibir os resultados da busca.
-
 o	details.mustache: Template para exibir informações detalhadas sobre um filme.
 
 •	public/: Arquivos estáticos (CSS, JavaScript, imagens).
