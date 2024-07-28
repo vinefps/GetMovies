@@ -1,17 +1,17 @@
-#MovieSearch
+# MovieSearch
 Este projeto é uma aplicação web simples que utiliza Node.js, Express e a API TMDb para exibir filmes populares e permitir que os usuários busquem por filmes específicos. A aplicação renderiza os detalhes dos filmes usando templates Mustache e Tailwind CSS para estilização.
 
-#Funcionalidades:
+# Funcionalidades:
 .Exibir uma lista de filmes populares
 .Buscar filmes por título
 .Visualizar informações detalhadas sobre um filme selecionado
 
-#Requisitos:
+# Requisitos:
 Node.js
 NPM
 Chave da API TMDb
 
-#Instalação:
+# Instalação:
 1 - Clone o repositório:
 git clone https://github.com/seuusuario/moviesearch.git
 cd moviesearch
@@ -23,7 +23,7 @@ API_MOVIE_KEY=sua_chave_tmdb
 npm start
 5- Abra seu navegador e acesse http://localhost:3000.
 
-#Estrutura do Projeto
+# Estrutura do Projeto
 •	index.js: Arquivo principal da aplicação onde o servidor Express é configurado.
 •	routes/movieRoute.js: Define as rotas para buscar e exibir dados dos filmes.
 •	views/: Contém os templates Mustache para renderização do HTML.
